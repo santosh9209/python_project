@@ -4,7 +4,7 @@ from .models import Vehicle
 from .validators import DuplicateVehicleError
 
 class FleetService:
-    def __init__(self, file_path="fleet_data.json"):
+    def __init__(self, file_path="/tmp/fleet_data.json"):
         self.file_path = file_path
         self.vehicles = self._load()
 

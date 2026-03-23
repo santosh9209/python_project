@@ -77,5 +77,5 @@ def generate_map(optimized_path):
         dash_array='10'
     ).add_to(m)
     
-    # Save to a file Flask can serve
-    m.save("templates/route_map.html")
+    # Return HTML string for Vercel Serverless (read-only filesystem)
+    return m.get_root().render()

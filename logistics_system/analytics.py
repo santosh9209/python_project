@@ -36,8 +36,8 @@ def generate_fleet_report(fleet_dict):
         plt.ylabel('Number of Vehicles')
         plt.tight_layout()
         
-        # Save chart instead of showing it to avoid blocking
-        chart_path = "fleet_status_chart.png"
+        # Save chart to /tmp/ for Vercel serverless
+        chart_path = "/tmp/fleet_status_chart.png"
         plt.savefig(chart_path)
         print(f"Analytics chart saved to {chart_path}")
     except Exception as e:
