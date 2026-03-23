@@ -1,0 +1,19 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Output / generated files (optional: could commit if user wants them as artifacts)
+*.json
+*.csv
+static/*.png
+templates/route_map.html
+static/route_summary.txt
+
+# VSCode / IDE
+.vscode/
